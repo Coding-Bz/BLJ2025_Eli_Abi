@@ -1,5 +1,3 @@
-package com.zork;
-
 public class Story {
 
 public void Kapitel1(){

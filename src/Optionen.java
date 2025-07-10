@@ -1,5 +1,3 @@
-package com.zork;
-
 public class Optionen {
 
 

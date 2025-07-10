@@ -1,5 +1,3 @@
-package com.zork;
-
 import java.util.*;
 
 public class InputOut {
