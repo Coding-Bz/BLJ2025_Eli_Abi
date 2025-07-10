@@ -13,6 +13,8 @@ public class AskLoop {
     KieServices ks = KieServices.Factory.get();
     Story story =new Story();
     KieContainer kc = ks.getKieClasspathContainer();
+    CommandVocabulary vocab = new CommandVocabulary();
+    CommandParser parser = new CommandParser(vocab);
     KieSession session = kc.newKieSession("ksession-rules");
     KieSession sessionK2 = kc.newKieSession("ksession-rulesK2");
     KieSession sessionK3 = kc.newKieSession("ksession-rulesK3");
@@ -23,55 +25,80 @@ public class AskLoop {
         while (!p.getCheck()) {
             switch (p.getLevel()) {
                 case 1: {
-                    p = new Player("", false, p.getLevel(),false);
-                    System.out.print("> ");
-                    p.setInput(input.next());
-                    story.Hilfe(p);
-                    session.insert(p);
-                    session.fireAllRules();
+                    try {
+                        p = new Player("", false, p.getLevel(),false);
+                        System.out.print("> ");
+                        String answer = input.nextLine();
+                        ParsedCommand result = parser.parse(answer);
+                        String actuallWord = result.getMatchedWord();
+                        p.setInput(actuallWord);
+                        session.insert(p);
+                        session.fireAllRules();
+                        story.Hilfe(p);
+                    }catch (RuntimeException e) {
+                        System.out.println("We could not understand your input, Please try again.");
+                    }
+
                         break;
                 }
 
                 case 2: {
-                    p = new Player("", false, p.getLevel(),false);
+                  try {
+                      p = new Player("", false, p.getLevel(),false);
+                      System.out.print("> ");
                     p.setInput(input.nextLine().trim());
-                    System.out.println(p.getInput());
                     story.Hilfe(p);
                     sessionK2.insert(p);
                     sessionK2.fireAllRules();
+                  }catch (RuntimeException e) {
+                      System.out.println("We could not understand your input, Please try again.");
+                  }
                     break;
                 }
 
 
                 case 3:{
-                    p = new Player("", false, p.getLevel(),false);
+                    try {
+                        p = new Player("", false, p.getLevel(),false);
+                        System.out.print("> ");
                     p.setInput(input.nextLine().trim());
-                    System.out.println(p.getInput());
                     story.Hilfe(p);
                     sessionK3.insert(p);
                     sessionK3.fireAllRules();
+                    }catch (RuntimeException e) {
+                        System.out.println("We could not understand your input, Please try again.");
+                    }
                     break;
                 }
 
                 case 4:{
+                    try {
                     p = new Player("", false, p.getLevel(),false);
+                        System.out.print("> ");
                     p.setInput(input.nextLine().trim());
-                    System.out.println(p.getInput());
                     story.Hilfe(p);
                     sessionK4.insert(p);
                     sessionK4.fireAllRules();
+                    }catch (RuntimeException e) {
+                        System.out.println("We could not understand your input, Please try again.");
+                    }
                     break;
 
                 }
 
                 case 5:{
-                    p = new Player("", false, p.getLevel(),false);
+                  try {
+                      p = new Player("", false, p.getLevel(),false);
+                      System.out.print("> ");
                     p.setInput(input.nextLine().trim());
-                    System.out.println(p.getInput());
                     story.Hilfe(p);
                     sessionK5.insert(p);
                     sessionK5.fireAllRules();
+                }catch (RuntimeException e) {
+                    System.out.println("We could not understand your input, Please try again.");
+                }
                     break;
+
                 }
 
 
