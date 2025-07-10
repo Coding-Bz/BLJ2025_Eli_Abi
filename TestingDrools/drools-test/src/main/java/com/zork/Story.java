@@ -104,25 +104,34 @@ public void  Kapitel6(){
 public void Hilfe(Player p){
 
     if (p.getInput().equals("Hilfe")){
-        System.out.println("Hilfe:\n" +
-                "\n" +
+        System.out.println("" +
+                "Hilfe:\n" +
+                "Kapitel 1:\n" +
                 "Ventilator\n" +
                 "Verstecken\n" +
                 "Durchsuchen\n" +
-                "Salz hinzufügen\n" +
-                "Gaziantep\n" +
-                "Tee machen\n" +
-                "Höre den Kodex\n" +
-                "Reise nach Istanbul\n" +
-                "Aktiviere den Generator\n" +
-                "Eine Rede halten\n" +
-                "Tanzen\n" +
                 "Anschalten\n" +
+                "\n" +
+                "Kapitel 2:\n" +
                 "nur putzen\n" +
                 "Daten einsehen\n" +
                 "nur schwitzen\n" +
                 "fliehe\n" +
+                "\n" +
+                "Kapitel 3:\n" +
                 "brühen\n" +
+                "Salz hinzufügen\n" +
+                "Gaziantep\n" +
+                "\n" +
+                "Kapitel 4:\n" +
+                "Tee machen\n" +
+                "Höre den Kodex\n" +
+                "Reise nach Istanbul\n" +
+                "\n" +
+                "Kapitel 5:\n" +
+                "Aktiviere den Generator\n" +
+                "Eine Rede halten\n" +
+                "Tanzen\n" +
                 "\n" +
                 "\n");
 
