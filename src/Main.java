@@ -3,10 +3,12 @@ import com.zork.parser.CommandType;
 
 public class Main {
     public static void main(String[] args) {
+        MusicPlayer musicPlayer = new MusicPlayer();
         CommandVocabulary vocab = new CommandVocabulary();
         CommandParser parser = new CommandParser(vocab);
 
         Scanner scanner = new Scanner(System.in);
+        musicPlayer.play("src/music/TARKAN.mp3");
 
         while (true) {
             System.out.print("> ");
