@@ -1,0 +1,24 @@
+<kmodule xmlns="http://www.drools.org/xsd/kmodule">
+
+
+    <kbase name="kapitel1" packages="Kapitel1">
+        <ksession name="ksession-rules"/>
+    </kbase>
+
+    <kbase name="kapitel2" packages="Kapitel2">
+        <ksession name="ksession-rulesK2"/>
+    </kbase>
+
+    <kbase name="kapitel3" packages="Kapitel3">
+        <ksession name="ksession-rulesK3"/>
+    </kbase>
+
+    <kbase name="kapitel4" packages="Kapitel4">
+        <ksession name="ksession-rulesK4"/>
+    </kbase>
+
+    <kbase name="kapitel5" packages="Kapitel5">
+        <ksession name="ksession-rulesK5"/>
+    </kbase>
+
+</kmodule>

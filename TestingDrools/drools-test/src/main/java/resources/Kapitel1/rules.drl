@@ -1,0 +1,35 @@
+package Kapitel1
+
+import com.zork.Player
+import com.zork.InputOut
+
+
+
+rule "Genaueres betrachten"
+when
+    Player(input.equalsIgnoreCase("Ventilator"))
+then
+    System.out.println("Du entdeckst eine vergilbte Aufschrift: „Made in Gaziantep, 1997“. Darunter: ein winziger Schalter mit der Aufschrift „Gegenwind-Modus“.");
+end
+
+rule "Verstecken"
+when
+    Player(input.equalsIgnoreCase("Verstecken"))
+then
+    System.out.println("Du hörst eine Sirene. Die Temperatur im Raum steigt – Strafe wegen ‚Klimaabsicht‘.");
+end
+
+rule "Durchsuchen"
+when
+    Player(input.equalsIgnoreCase("Durchsuchen"))
+then
+    System.out.println("Du findest Artikel 98b: „Jegliche Luftverwirbelung ohne Genehmigung ist als Widerstand zu interpretieren.“");
+end
+
+rule "Anschalten"
+when
+    $c : Player(input.equalsIgnoreCase("Anschalten"))
+then
+    System.out.println("🡒 Du gehst weiter zu Kapitel 2");
+    $c.setCheck(true);
+end

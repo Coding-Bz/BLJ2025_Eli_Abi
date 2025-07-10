@@ -1,0 +1,37 @@
+package Kapitel2
+
+import com.zork.Player
+import com.zork.InputOut
+
+
+rule "nur putzen"
+when Player(input.equalsIgnoreCase("nur putzen"))
+then
+    System.out.println("➤ Antwort des Algorithmus: „Staubabsaugung zählt als thermodynamischer Eingriff. Code 44C.2.3: Unschuldig, aber verdächtig.“");
+
+ end
+
+rule "Daten einsehen"
+when Player(input.equalsIgnoreCase("daten einsehen"))
+then
+    System.out.println("➤ Du wirst ausgeloggt. Der Algorithmus hasst Neugier.");
+
+ end
+
+ rule "nur schwitzen"
+ when Player(input.equalsIgnoreCase("nur schwitzen"))
+ then
+     System.out.println(" Dein Schweigen wird als „Passivwiderstand durch Verdunstung“ protokolliert. Der Raum wird noch wärmer.");
+
+  end
+
+  rule "fliehe"
+  when
+   $c : Player(input.equalsIgnoreCase("fliehe"))
+  then
+   System.out.println("🡒 weiter zu Kapitel 3");
+      $c.setCheck(true);
+   end
+
+
+

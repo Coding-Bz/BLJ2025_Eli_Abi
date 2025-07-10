@@ -1,0 +1,25 @@
+package Kapitel4
+
+import com.zork.Player
+import com.zork.InputOut
+
+
+rule "Tee machen"
+when Player(input.equalsIgnoreCase("Tee machen"))
+then
+System.out.println("Du hats dir einen Tee zubereitet!");
+ end
+
+
+ rule "Höre den Kodex mit einem Pistazien-Ohrhörer"
+
+ when Player(input.equalsIgnoreCase("Höre den Kodex"))
+ then System.out.println("➤ „Wind entsteht durch inneres Flattern“, sagt die Stimme. Du weißt jetzt, was zu tun ist.");
+  end
+
+  rule "Reise zurück nach Istanbul"
+  when  $c : Player(input.equalsIgnoreCase("Reise nach Istanbul"))
+  then
+  System.out.println("🧭 Reise zurück nach Istanbul – unter Decknamen → 🡒 weiter zu Kapitel 5");
+  $c.setCheck(true);
+   end

@@ -1,0 +1,26 @@
+package Kapitel3
+
+import com.zork.Player
+import com.zork.InputOut
+
+
+
+rule "Kaffee brühen"
+when Player(input.equalsIgnoreCase("brühen"))
+then
+ System.out.println("➤ Die U-Bahn beschleunigt auf 97 km/h. Deine Thermoskanne vibriert.");
+ end
+
+ rule "Salz hinzufügen"
+
+ when  Player(input.equalsIgnoreCase("Salz hinzufügen"))
+ then
+System.out.println("➤ Falscher Befehl. Die KI deaktiviert die Belüftung. Die Luft riecht nach altem Cayglas.");
+  end
+
+  rule "Gaziantep"
+  when   $c :Player(input.equalsIgnoreCase("Gaziantep"))
+  then
+  System.out.println("➤ Die KI antwortet: „Baklava-Modus aktiviert.“ → 🡒 weiter zu Kapitel 4");
+  $c.setCheck(true);
+  end

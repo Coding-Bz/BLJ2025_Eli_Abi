@@ -1,0 +1,24 @@
+package Kapitel5
+
+import com.zork.Player
+import com.zork.InputOut
+
+
+rule "Generator einschalten"
+
+when Player(input.equalsIgnoreCase("Aktiviere den Generator"))
+then System.out.println("➤ Ein Rumpeln. Der Turm dreht sich. Die Lüftung beginnt");
+ end
+
+rule "Einde Rede halten mit Mini-Ventilator"
+when Player(input.equalsIgnoreCase("Eine Rede halten"))
+then System.out.println("➤ Deine Stimme zittert im Luftzug. Die Menge johlt.");
+ end
+
+
+rule "Tanze mit Vivienne gegen das Belüftungsverbot"
+when $c : Player(input.equalsIgnoreCase("Tanzen"))
+then System.out.println("➤ Ein poetischer Moment. Jemand streamt es live. Hashtag #FreeTheBreeze trendet.");
+$c.setCheck(true);
+ end
+
