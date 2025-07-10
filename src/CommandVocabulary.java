@@ -45,6 +45,33 @@ public class CommandVocabulary {
         vocabulary.put("Every person has the right to wind, wit, and 42 layers of baklava. Period.", CommandType.TALK);
 
 
+        vocabulary.put("Ventilator", CommandType.ENTER);
+        vocabulary.put("Verstecken", CommandType.ENTER);
+        vocabulary.put("Durchsuchen", CommandType.ENTER);
+        vocabulary.put("Anschalten", CommandType.ENTER);
+        vocabulary.put("nur putzen", CommandType.ENTER);
+        vocabulary.put("nur schwitzen", CommandType.ENTER);
+        vocabulary.put("schwitzen", CommandType.ENTER);
+        vocabulary.put("fliehe", CommandType.ENTER);
+        vocabulary.put("brühen", CommandType.ENTER);
+        vocabulary.put("Salz hinzufügen", CommandType.ENTER);
+        vocabulary.put("Salz", CommandType.ENTER);
+        vocabulary.put("Gaziantep", CommandType.ENTER);
+        vocabulary.put("Tee machen", CommandType.ENTER);
+        vocabulary.put("Tee", CommandType.ENTER);
+        vocabulary.put("Höre den Kodex", CommandType.ENTER);
+        vocabulary.put("Kodex", CommandType.ENTER);
+        vocabulary.put("Reise nach Istanbul", CommandType.ENTER);
+        vocabulary.put("Istanbul", CommandType.ENTER);
+        vocabulary.put("Aktiviere den Generator", CommandType.ENTER);
+        vocabulary.put("Aktiviere", CommandType.ENTER);
+        vocabulary.put("Eine Rede halten", CommandType.ENTER);
+        vocabulary.put("Eine Rede", CommandType.ENTER);
+        vocabulary.put("Sprich", CommandType.ENTER);
+        vocabulary.put("Tanz", CommandType.ENTER);
+        vocabulary.put("Tanzen", CommandType.ENTER);
+
+
         vocabulary.put("turn on", CommandType.TURN_ON);
         vocabulary.put("start", CommandType.TURN_ON);
         vocabulary.put("activate", CommandType.TURN_ON);

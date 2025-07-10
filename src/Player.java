@@ -2,7 +2,7 @@ package com.zork;
 
 import org.kie.api.definition.type.PropertyReactive;
 
-@PropertyReactive
+
 public class Player {
     private String input;
     private boolean check;
