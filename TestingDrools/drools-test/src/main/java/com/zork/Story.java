@@ -9,6 +9,7 @@ public void Kapitel1(){
             "Nicht irgendeinen – sondern den eines 90er-Jahre-Ventilators, Marke Arçelik, den er heimlich im Basar von Üsküdar gegen einen USB-Stick mit dem osmanischen Gesetzbuch im MIDI-Format eingetauscht hat.\n" +
             "Leider darf in Istanbul niemand eigenständig Luftbewegung erzeugen, ohne zentralstaatliche Genehmigung.\n" +
             "\uD83E\uDDE0 Fun Fact (echt!): Gaziantep hat über 180 offiziell registrierte Baklava-Bäckereien und war die erste türkische Stadt mit UNESCO-Gastronomiestatus.\n"
+            +"Was machst du jetzt ?"
     +"\n");
 }
 
@@ -22,7 +23,7 @@ public void Kapitel2(){
             "\n" +
             "„Wind ist Widerstand. Schwitzen ist Gehorsam.“\n" +
             "\n");
-    System.out.println("\uD83E\uDDED Was sagst du?");
+    System.out.println("\uD83E\uDDED Was sagst du jetzt?");
 
 }
 public void Kapitel3(){
@@ -32,7 +33,8 @@ public void Kapitel3(){
             "\n" +
             "Gesteuert wird sie von einer KI, die nur auf Schwarztee-Befehle reagiert:\n" +
             "\n" +
-            "\uD83E\uDDE0 Echter Fun Fact: Rize produziert über 65 % des türkischen Tees. Der Nebel, der zwischen den Teefeldern liegt, ist legendär – und wird oft als „Zutat“ betrachtet.");
+            "\uD83E\uDDE0 Echter Fun Fact: Rize produziert über 65 % des türkischen Tees. Der Nebel, der zwischen den Teefeldern liegt, ist legendär – und wird oft als „Zutat“ betrachtet.\n"
+            +"Was machst du jetzt ?");
 }
 
 
